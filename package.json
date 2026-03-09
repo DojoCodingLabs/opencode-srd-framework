@@ -1,0 +1,67 @@
+{
+  "name": "@dojocoding/opencode-srd-framework",
+  "version": "0.1.0",
+  "description": "OpenCode-native SRD framework with global commands, agents, skills, installer CLI, and alignment plugin.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "opencode-srd-framework": "./dist/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./plugin": {
+      "types": "./dist/plugin.d.ts",
+      "import": "./dist/plugin.js"
+    },
+    "./cli": {
+      "import": "./dist/cli.js"
+    }
+  },
+  "files": [
+    "dist/",
+    "assets/",
+    "docs/",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20.11.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsup src/index.ts src/plugin.ts --format esm --dts --clean && tsup src/cli.ts --format esm --clean false",
+    "test": "vitest run tests/config-merge.test.ts tests/manifest.test.ts tests/install.test.ts",
+    "pack:smoke": "npm run build && vitest run tests/smoke-pack.test.ts",
+    "prepublishOnly": "npm run test && npm run pack:smoke"
+  },
+  "keywords": [
+    "opencode",
+    "plugin",
+    "agents",
+    "skills",
+    "srd",
+    "cli"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DojoCodingLabs/opencode-srd-framework.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@opencode-ai/plugin": "^0.7.0",
+    "jsonc-parser": "^3.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}
