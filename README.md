@@ -2,6 +2,8 @@
 
 Synthetic Reality Development (SRD) for OpenCode. This package installs global commands, agents, and skills, and registers an npm-loaded OpenCode plugin that nudges teams back toward revenue-critical work after edits.
 
+This package is the OpenCode-compatible npm distribution of the upstream SRD framework in [`DojoCodingLabs/srd-framework`](https://github.com/DojoCodingLabs/srd-framework). The upstream project targets Claude Code's plugin marketplace flow, while this repo repackages the same SRD methodology and assets for OpenCode and npm-based installation.
+
 ## What SRD Is
 
 SRD is a backwards-from-success product workflow:
@@ -107,6 +109,8 @@ The npm-loaded plugin listens after edit-style tools and shows a throttled SRD r
 
 ## Compatibility Notes
 
+- The upstream SRD framework lives in `DojoCodingLabs/srd-framework`; this package exists to make that workflow installable in OpenCode.
+- The original Claude plugin is distributed through the plugin marketplace rather than npm; use this package for the npm-published OpenCode-compatible version.
 - `srd/claude-directive.yml` remains the canonical machine-readable directive path for existing SRD workflows.
 - Packaged references and schemas ship for maintenance and documentation, but runtime prompts are self-contained.
 - Claude-only packaging from `.claude-plugin/` is intentionally not migrated.

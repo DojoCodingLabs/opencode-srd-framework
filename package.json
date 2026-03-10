@@ -1,6 +1,6 @@
 {
   "name": "@dojocoding/opencode-srd-framework",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "OpenCode-native SRD framework with global commands, agents, skills, installer CLI, and alignment plugin.",
   "type": "module",
   "main": "./dist/index.js",
