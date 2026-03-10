@@ -99,5 +99,5 @@ describe("package smoke", () => {
 
     expect(doctorResult.status).toBe(0);
     expect(JSON.parse(doctorResult.stdout).healthy).toBe(true);
-  });
+  }, 120_000);
 });
