@@ -6,7 +6,7 @@
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "bin": {
-    "opencode-srd-framework": "./dist/cli.js"
+    "opencode-srd-framework": "dist/cli.js"
   },
   "exports": {
     ".": {
