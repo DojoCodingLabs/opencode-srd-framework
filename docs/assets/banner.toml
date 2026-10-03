@@ -1,0 +1,12 @@
+name = "OpenCode SRD Framework"
+tagline = "Build [backwards] from success"
+chips = ["3 commands / 3 agents"]
+meta = "Open source · OpenCode"
+tile = "/"
+
+[card]
+kind = "terminal"
+label = "OpenCode"
+status = "v0.1.1 · MIT"
+lines = ["opencode-srd-framework install", "/srd-quick", ["/srd-generate", "docs/prd.md"]]
+dim = "personas · journeys · gap audit"
