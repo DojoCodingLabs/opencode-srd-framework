@@ -1,8 +1,24 @@
+<p align="center">
+  <a href="https://dojocoding.io">
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="docs/assets/banner-dark.svg">
+      <source media="(prefers-color-scheme: light)" srcset="docs/assets/banner-light.svg">
+      <img alt="OpenCode SRD Framework by Dojo Coding: Build backwards from success" src="docs/assets/banner-light.svg" width="100%">
+    </picture>
+  </a>
+</p>
+
 # OpenCode SRD Framework
+
+**The SRD methodology for OpenCode, installed with one npm command, for builders who want to know what to build next.**
 
 Synthetic Reality Development (SRD) for OpenCode. This package installs global commands, agents, and skills, and registers an npm-loaded OpenCode plugin that nudges teams back toward revenue-critical work after edits.
 
 This package is the OpenCode-compatible npm distribution of the upstream SRD framework in [`DojoCodingLabs/srd-framework`](https://github.com/DojoCodingLabs/srd-framework). The upstream project targets Claude Code's plugin marketplace flow, while this repo repackages the same SRD methodology and assets for OpenCode and npm-based installation.
+
+[![npm version](https://img.shields.io/npm/v/@dojocoding/opencode-srd-framework?color=FF7151&labelColor=201E3D)](https://www.npmjs.com/package/@dojocoding/opencode-srd-framework) [![License MIT](https://img.shields.io/badge/license-MIT-FF7151?labelColor=201E3D)](LICENSE) ![OpenCode plugin](https://img.shields.io/badge/OpenCode-plugin-201E3D?labelColor=201E3D)
+
+[Get started](#install) · [Commands](#available-commands) · [Compatibility](#compatibility-notes) · [Migrating from Claude Code](docs/migration-from-claude-code.md) · [Report an issue](https://github.com/DojoCodingLabs/opencode-srd-framework/issues/new)
 
 ## What SRD Is
 
@@ -120,3 +136,11 @@ More detail:
 - `docs/migration-from-claude-code.md`
 - `docs/compatibility.md`
 - `docs/release.md`
+
+## License
+
+[MIT](LICENSE). Built by [Dojo Coding](https://dojocoding.io).
+
+<p align="center">
+  <a href="https://dojocoding.io"><img src="docs/assets/dojocoding-mark.png" alt="Dojo Coding" width="48"></a>
+</p>
